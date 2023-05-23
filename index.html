@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/3d9e2b6602.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/tt-norms-pro" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+                
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- quick info section -->
+    <div class="quick_info">
+        <div class = "quick_info_container">
+            <ul class = "qi_menu">
+
+                <li class="phone_icon">
+                    <img src="images/phone_icon.png" alt="pic" id="phone_icon">
+                </li>
+
+                <li class="qi_item">
+                    <a href="/" class="qi_links">+1 678-756-5709</a>
+                </li>
+
+                <li class="email_icon">
+                    <img src="images/email.png" alt="pic" id="email_icon">
+                </li>
+
+                <li class="qi_item">
+                    <a href="/" class="qi_links">jjinsulation0@hotmail.com</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Navigation Bar Section  -->
+    <div class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="/index.html"><img src="images/1.png" alt="pic" id="navbar__logo"></a>
+            </div>
+            <!-- <a href="/" id="navbar__logo">JJ</a> -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Home, About Us, Services, Contact Us, CALL US | ###(actual phone number) -->
+            <ul class="navbar__menu">
+
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#whyus" class="navbar__links">Why&nbsp;Us</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links">Services</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">Contact</a>
+                </li>
+
+                <li class="navbar__btn">
+                    <a href="tel:6787565709" class="button">CALL NOW</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section  -->
+    <section id="home" class="main">
+        <div class="main__container" >
+                
+                    <div class="main__content reveal">
+                        <h1>JJ'S COMMERCIAL INSULATION </h1>
+                        <h2>Providing Atlanta businesses insulation for over 17+ years</h2>
+                        <!-- <p>See what services we offer.</p> -->
+                        <button class="main__btn"><a href="/contact.html">GET A FREE QUOTE NOW</a></button>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="whyus" class = "whyus">
+        <div class = "whyus_container">
+            <div class = "whyus_header reveal">
+                <h2>Your Trusted Partner in Insulation: <br><h3>Business's Efficiency and Success with Expertise and Dedication</h3></h2>
+                <p>JJ's Insulation, your go-to provider for commercial insulation services in Georgia! 17+ years of experience!</p>
+            </div>
+            <div class="whyus_picture">
+                <img src="images/yelp_phone.png" alt="pic" id="phone_picture" class="reveal">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services" class="services ">
+        <div class="row reveal">
+          <h2 class="section-heading">Our Services</h2>
+        </div>
+        <div class="row reveal">
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-tape"></i>
+              </div>
+              <h3>Air Duct Sealing</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-faucet"></i>
+              </div>
+              <h3>Pipe Insulation</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-droplet"></i>
+              </div>
+              <h3>Water Heater Insulation</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-kaaba"></i>
+              </div>
+              <h3>Fiberglass Insulation</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-wrench"></i>
+              </div>
+              <h3>Insulation Repair</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <h3>Insulation Replacement/Removal</h3>
+              <!-- <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact" class = "contact">
+        <div class = "content reveal">
+            <h2>Contact Us</h2>
+        </div>
+        <div class = "container reveal">
+            <div class = "contactInfo">
+                <div class = "box">
+                    <div class = "icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class = "text">
+                        <h3>Address</h3>
+                        <p>215 Woodland Way,<br>Canton, GA<br>30114</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                    <div class = "text">
+                        <h3>Phone / WhatsApp</h3>
+                        <p>678-756-5709</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class = "text">
+                        <h3>Email</h3>
+                        <p>jjinsulation0@hotmail.com</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon"><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div class = "text">
+                        <h3>Instagram</h3>
+                        <p>@jjs_insulation</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name = "" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name = "" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                          <option value="0">Select Service:</option>
+                          <option value="1">Air Duct Sealing/Installation</option>
+                          <option value="2">Pipe Insulation Installation</option>
+                          <option value="3">Water Heater Insulation Installation</option>
+                          <option value="4">Fiberglass Insulation Installation</option>
+                          <option value="5">Insulation Repair</option>
+                          <option value="6">Insulation Replacement</option>
+                          <option value="7">Insulation Removal</option>
+                          <option value="7">Other...</option>
+                        </select>
+                      </div>
+
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name = "" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <section>
+
+    <script src="app.js"></script>
+</body>
+</html>
