@@ -699,7 +699,7 @@ padding-left: 5%;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  @media screen and (max-width: 414px){
+  @media screen and (max-width: 450px){
     .qi_links{
         font-size: 10px;
     }
