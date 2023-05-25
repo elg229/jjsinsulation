@@ -258,36 +258,36 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class = "contactForm">
-                <form action="https://formspree.io/f/mknaavnr"
+                <form name = "contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknaavnr"
                     method="POST">
                     <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name = "name" required="required">
+                    <div for = "full name" class="inputBox">
+                        <input type="text" name = "full name" required="">
                         <span>Full Name</span>
                     </div>
-                    <div class="inputBox">
-                        <input type="text" name = "email" required="required">
+                    <div for = "email" class="inputBox">
+                        <input type="text" name = "email" required="">
                         <span>Email</span>
                     </div>
-                    <div class="custom-select" name = "service" style="width:200px;">
-                        <select>
-                          <option value="0">Select Service:</option>
-                          <option value="1">Air Duct Sealing/Installation</option>
-                          <option value="2">Pipe Insulation Installation</option>
-                          <option value="3">Water Heater Insulation Installation</option>
-                          <option value="4">Fiberglass Insulation Installation</option>
-                          <option value="5">Insulation Repair</option>
-                          <option value="6">Insulation Replacement</option>
-                          <option value="7">Insulation Removal</option>
-                          <option value="7">Other...</option>
+                    <div for = "service" class="custom-select" name = "service" style="width:200px;">
+                        <select name = "service" id = "service" required="">
+                          <option value="0" selected="disabled">Select Service:</option>
+                          <option value="1" selected="disabled">Air Duct Sealing/Installation</option>
+                          <option value="2" selected="disabled">Pipe Insulation Installation</option>
+                          <option value="3" selected="disabled">Water Heater Insulation Installation</option>
+                          <option value="4" selected="disabled">Fiberglass Insulation Installation</option>
+                          <option value="5" selected="disabled">Insulation Repair</option>
+                          <option value="6" selected="disabled">Insulation Replacement</option>
+                          <option value="7" selected="disabled">Insulation Removal</option>
+                          <option value="7" selected="disabled">Other...</option>
                         </select>
                       </div>
 
-                    <div class="inputBox">
-                        <textarea name = "message" required="required"></textarea>
+                    <div for = "message" class="inputBox">
+                        <textarea name = "message" required=""></textarea>
                         <span>Type your Message...</span>
                     </div>
-                    <div class="inputBox">
+                    <div name = "_subject" class="inputBox">
                         <input type="submit" value="Send">
                     </div>
                 </form>
