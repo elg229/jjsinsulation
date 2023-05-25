@@ -262,14 +262,14 @@ $(document).ready(function(){
                     method="POST">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name = "" required="required">
+                        <input type="text" name = "name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name = "" required="required">
+                        <input type="text" name = "email" required="required">
                         <span>Email</span>
                     </div>
-                    <div class="custom-select" style="width:200px;">
+                    <div class="custom-select" name = "service" style="width:200px;">
                         <select>
                           <option value="0">Select Service:</option>
                           <option value="1">Air Duct Sealing/Installation</option>
@@ -284,11 +284,11 @@ $(document).ready(function(){
                       </div>
 
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea name = "message" required="required"></textarea>
                         <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name = "" value="Send">
+                        <input type="submit" value="Send">
                     </div>
                 </form>
             </div>
